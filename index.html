@@ -1,0 +1,114 @@
+<!-- HTML_Form/Signup -->
+ 
+ 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="making an html signup form" />
+    <title>Signup</title>
+    <link rel="shortcut icon" href="https://www.pinclipart.com/picdir/big/555-5555673_music-video-photograph-hashtag-here-with-me-whatsapp.png" type="image/x-icon" />
+ 
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-size: 62.5%;
+      }
+      body {
+        @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap");
+        font-family: "Inter", sans-serif;
+        background-color: black;
+        color: white;
+      }
+      .box {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 75%;
+        height: 70%;
+      }
+      header {
+        font-size: 6.4rem;
+        font-weight: 400;
+      }
+ 
+      form {
+        font-size: 2.4rem;
+        font-weight: 300;
+        margin-top: 15px;
+      }
+      form input {
+        background: transparent;
+        color: white;
+        border: none;
+      }
+      input[type="date"] {
+        color: transparent !important;
+      }
+      .active input[type="date"] {
+        color: inherit !important;
+      }
+      button {
+        width: 22.6rem;
+        height: 5.8rem;
+        background: #ffffff;
+        font-size: 2.4rem;
+        font-weight: 300;
+      }
+      hr {
+        margin-top: 10px;
+        margin-bottom: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <header>
+        <h1>Signup</h1>
+      </header>
+      <main>
+        <form action="">
+          <label for="">Full Name</label>
+          <input type="text" required />
+          <hr />
+ 
+          <label for="">Email</label>
+          <input type="email" required />
+          <hr />
+ 
+          <label for="">Password</label>
+          <input type="password" required />
+          <hr />
+ 
+          <label for="">Confirm Password</label>
+          <input type="password" required />
+          <hr />
+ 
+          <label for="">DOB</label>
+          <input type="date" required />
+          <hr />
+ 
+          <input type="radio" name="category" id="" required />
+          <label for="category">Student</label>
+          <input type="radio" name="category" id="" required />
+          <label for="category">Employee</label>
+          <br /><br />
+ 
+          <input type="checkbox" name="" id="" required />
+          <label for="">I agree to all the Terms and conditions</label>
+          <br /><br />
+ 
+          <button type="submit">Signup</button>
+        </form>
+      </main>
+      <footer></footer>
+    </div>
+  </body>
+</html>
